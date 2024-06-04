@@ -1,7 +1,5 @@
 import React from "react";
 import { CardBody, CardContainer, CardItem } from "../ui/3d-card";
-import Link from "next/link";
-import Typewriter from 'typewriter-effect'; 
 
 
 export function ThreeDCardDemo() {
@@ -20,20 +18,7 @@ export function ThreeDCardDemo() {
           translateZ="60"
           className="text-neutral-700 text-xl font-bold max-w-sm mt-2 pb-3 dark:text-neutral-100 text-center flex justify-center items-center h-40"
         >
-          <Typewriter 
-        onInit={(typewriter) => { 
-          typewriter.typeString('Get into the flow .') 
-            .callFunction(() => { 
-              console.log('String typed out!'); 
-            }) 
-            .pauseFor(2500) 
-            .deleteAll() 
-            .callFunction(() => { 
-              console.log('All strings were deleted'); 
-            }) 
-            .start(); 
-        }} 
-      /> 
+          Get into the flow .
         </CardItem>
         
         <div className="flex justify-between items-center mt-20">
